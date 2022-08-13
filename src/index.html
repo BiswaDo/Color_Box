@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Box</title>
+  </head>
+  <body>
+
+    <main>
+
+      <div class="base">
+
+        <div class="color_display"></div>
+
+        <div class="utility_box">
+
+          <div class="color_shade">
+            <div class="color_choice bt1">Black</div>
+            <div class="color_choice bt2">Red</div>
+            <div class="color_choice bt3">Yellow</div>
+            <div class="color_choice bt4">Blue</div>
+            <div class="color_choice bt5">Purple</div>
+            <div class="color_choice bt6">green</div>
+          </div>
+
+          <div class="reset">
+            Reset
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+    <div class="box2">
+
+      <div class="base">
+
+        <div class="color_display2"></div>
+
+
+        <div class="manual_set">
+
+          <label id = "manual_color_choice">
+
+            <span>Colour</span> <input class="text_color" value="#ccc" type="text" name="color_set" placeholder="color"/>
+
+            <button class="btn_submit" type="submit" name="submit">Submit</button>
+
+          </label>
+          <label id="manual_set2">
+            R <input class="color_by_RGB r" type=text size=3 maxlength=3 name="r" value="0" onBlur="rgb(this);">
+            <br>
+            G <input class="color_by_RGB g" type=text size=3 maxlength=3 name="g" value="0" onBlur="rgb(this);"/>
+            <br>
+            B <input class="color_by_RGB b" type=text size=3 maxlength=3 name="b" value="0" onBlur="rgb(this);"/>
+
+            <button class="btn_submit btn_submit2" type="submit" name="submit">Submit</button>
+          </label>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="btn_change">
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
